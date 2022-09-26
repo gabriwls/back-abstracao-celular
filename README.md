@@ -1,22 +1,13 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# Criando um Sistema e Abstraindo um Celular com POO em C#
+Construção de um sistema em .NET, do tipo Console, que trabalha com smartphones a partir de conhecimentos de Programação Orientada a Objetos.  
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+A modelagem utilizada permite que diferentes marcas e modelos de celulares tenham seus comportamentos particulares e um maior reuso do código.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+## O projeto
+![Diagrama das classes do projeto](Imagens/diagrama.png)
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+A partir da abstração de um celular, consolidada na classe **Smartphone**, têm-se as classes **Nokia** e **iPhone**, para dois diferentes tipos de celulares. 
 
-![Diagrama classes](Imagens/diagrama.png)
-
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
-
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+O método **InstalarAplicativo** é sobrescrito em cada uma das classes filhas, pois cada modelo de celular possui diferentes maneiras de instalar um aplicativo.  
+<br>
+*(Desafio de projeto do bootcamp "Pottencial .NET Developer" oferecido pela [DIO](https://www.dio.me/) e pela [Pottencial](https://pottencial.com.br/))*
